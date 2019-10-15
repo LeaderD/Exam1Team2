@@ -16,11 +16,15 @@ function Story(){
     if(BGColor === false){
         colorTheme = (
             <View style={[styles.cont,{backgroundColor:'powderblue'}]}>
+                <View>
+                <Text> Scroll </Text>
+                <Switch/>
                 <Text> Night Mode </Text>
                 <Switch
                 value = {BGColor}
                 onValueChange={(itemValue) => setBGColor(itemValue)}/>
-                <Text style={[styles.text,{color:'#000'}], styles.textBox}> Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+                </View>
+                <Text style={[styles.text,{color:'#000'}], styles.textbox}> Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
                 </Text>
             </View>
         )
@@ -29,13 +33,16 @@ function Story(){
     if(BGColor === true){
         colorTheme = (
             <View style={[styles.cont,{backgroundColor:'black'}]}>
+                <View>
+                <Text style={[styles.text,{color:'#FFF'}]}> Scroll </Text>
+                <Switch/>
                  <Text style={[styles.text,{color:'#FFF'}]}> Night Mode </Text>
                 <Switch
                 value = {BGColor}
                 onValueChange={(itemValue) => setBGColor(itemValue)}>
-
                 </Switch>
-                <Text style={[styles.text,{color:'#FFF'}]}> Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+                </View>
+                <Text style={[styles.text,{color:'#FFF', lineHeight:30}]}> Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
 
         </Text>
             </View>
@@ -43,13 +50,7 @@ function Story(){
     }
 
     if(Scrollability === true){
-        scrollScreen = (
-            <Switch
-            value = {Scrollability}
-            onValueChange={(itemValue) => setScroll(itemValue)}
-
-            />
-        )
+            <ScrollView textboxStyle={styles.textbox}></ScrollView>
     }
 
     return(

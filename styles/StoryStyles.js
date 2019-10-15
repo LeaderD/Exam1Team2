@@ -4,11 +4,12 @@ var styles = StyleSheet.create({
     cont:{
         height: "100%",
         fontSize: 14,
-        padding: 20,
+        padding: 30,
     },
 
     textbox:{
-        lineHeight: 25
+        lineHeight: 30,
+        paddingVertical: 20
     }
 })
 
