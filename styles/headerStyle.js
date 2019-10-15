@@ -18,6 +18,10 @@ var HeaderStyle = StyleSheet.create({
         alignItems: 'center',
         backgroundColor: '#facf4c'
     },
+    textInput:{
+        padding: 10
+        
+    }
   
 
  })

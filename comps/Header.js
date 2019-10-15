@@ -22,6 +22,7 @@ function Header() {
            <TextInput
           placeholder="Type here to translate!"
           onChangeText={text => setChangeText(text)}
+          style={HeaderStyle.textInput}
 
         />
       </View>
@@ -34,7 +35,7 @@ function Header() {
 
     return (
       <View style={HeaderStyle.HeaderBackground}>
-        <Text Style={HeaderStyle.fontSizeUp}>{settedText}</Text>
+        <Text style={HeaderStyle.fontSizeUp}>{settedText}</Text>
         {InputTitle}
         <Button
           style ={HeaderStyle.ButtonColor}
