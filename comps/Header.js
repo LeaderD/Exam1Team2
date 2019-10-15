@@ -15,7 +15,6 @@ function Header() {
     const [settedText, setChangeText] = useState('The Story Of My Life'); 
     const [showInput, setShowInput] = useState(false);
     var InputTitle = null;
-    var textDisplay =  null;
 
     if (showInput === true){
     InputTitle = (
@@ -35,12 +34,11 @@ function Header() {
 
     return (
       <View style={HeaderStyle.HeaderBackground}>
-        <Text Style={HeaderStyle.TextStyle}>{settedText}</Text>
+        <Text Style={HeaderStyle.fontSizeUp}>{settedText}</Text>
         {InputTitle}
         <Button
           style ={HeaderStyle.ButtonColor}
           title="Edit"
-          color="#f194ff"
           onPress = {() => {
             setShowInput(!showInput);
             }}

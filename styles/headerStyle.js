@@ -1,21 +1,24 @@
 import {StyleSheet} from 'react-native';
 
 var HeaderStyle = StyleSheet.create({
+    fontSizeUp:{
+        color: 'black',
+        fontSize: 20,
+        lineHeight: 20
+    },
 
     ButtonColor:{
         flexDirection: "row",
-        color:'blue'
+        color:'blue',
+        fontSize: 20
     },
     HeaderBackground:{
         paddingTop: 30,
         justifyContent: 'center',
         alignItems: 'center',
-        backgroundColor: '#FDD'
+        backgroundColor: '#facf4c'
     },
-    TextStyle:{
-        color: 'black',
-        fontSize:20
-    },
+  
 
  })
 
