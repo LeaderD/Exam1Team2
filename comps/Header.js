@@ -15,19 +15,21 @@ function Header() {
     const [settedText, setChangeText] = useState('The Story Of My Life'); 
     const [showInput, setShowInput] = useState(false);
     var InputTitle = null;
-    var valueTextTyped =  null;
+    var textDisplay =  null;
 
     if (showInput === true){
     InputTitle = (
       <View>
            <TextInput
           placeholder="Type here to translate!"
-          onChangeText={() => setChangeText()}
-          value={valueTextTyped}
+          onChangeText={text => setChangeText(text)}
+
         />
       </View>
       )
     }
+
+    if (setChangeText )
     
 
 
