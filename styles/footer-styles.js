@@ -3,23 +3,31 @@ import {StyleSheet} from "react-native";
 const styles = StyleSheet.create({
     container:{
         flex:1,
-        top: 400,
-        backgroundColor: "pink"
+        top: 500,
+        backgroundColor: "pink",
         
     },
 
-    text1:{
-        top: 100,
-        left: 30
+    author:{
+        bottom: 185,
+        left: 40,
+        fontSize: 25,
+        fontWeight: "bold",
+        fontStyle: "italic",
+        color: "gray"
+        
+
     },
-    text2:{
-        top: 90,
-        left: 50
+    by:{
+        fontStyle: "italic",
+        color: "gray",
+        top: 35,
+        left: 20
     },
     picker:{
         width:"30%",
-        left: 200,
-        bottom: 50
+        left: 250,
+        bottom: 60
     }
 
 })
