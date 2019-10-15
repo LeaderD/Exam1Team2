@@ -11,7 +11,6 @@ function Story(){
     const [Scrollability, setScroll] = useState(false);
 
     var colorTheme = null
-    var scrollScreen = null
 
     if(BGColor === true){
         colorTheme = (
@@ -47,6 +46,8 @@ function Story(){
             <Switch
             value = {Scrollability}
             onValueChange={(itemValue) => setScroll(itemValue)}
+
+            />
         )
     }
 
