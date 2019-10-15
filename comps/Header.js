@@ -14,16 +14,20 @@ function Header() {
 
     const [settedText, setChangeText] = useState('The Story Of My Life'); 
     const [showInput, setShowInput] = useState(false);
-    var EditButton = null;
     var InputTitle = null;
 
     if (showInput === true){
     InputTitle = (
-        <TextInput
+      <View>
+           <TextInput
           placeholder="Type here to translate!"
           onChangeText={() => this.setChangeText({})}
           value={setChangeText}
         />
+      </View>
+       
+        
+
       )
     }
 
@@ -37,7 +41,7 @@ function Header() {
           title="Edit"
           color="#f194ff"
           onPress = {() => {
-            setShowInput[(!showInput)];
+            setShowInput(!showInput);
             }}
         />
       </View>
